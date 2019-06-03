@@ -1,0 +1,68 @@
+<html>
+	<head> 
+		<style>
+			
+			
+			button{
+				text-decoration:none;
+				color:33f000;
+			}
+			#head{
+				background-color:33fff9;
+				width:350px;
+				margin:auto ;
+			}
+		</style>
+		<script>
+			function reset(){
+				document.getElementById("name").value = " ";
+				document.getElementById("pwd").value = " ";
+				document.getElementById("phn").value = " ";
+				
+			}
+			function submit(){
+				location.href="Login.html";
+			
+			}
+		</script>
+	</head>
+	<body>  <center>
+		<form action="Login.html" method="post">
+		<div  style="background-color:red">
+			<i><h1 align="center" style="color:33fff9;">Registration Page</h1></i>
+		</div>
+                <div id="head" style="background-color:33fff9;width:350px;align:right" >
+		<table style="width=40%" >
+			<tr>
+				<td><label>Name :</label></td>
+				<td><input type="text" id="name" required></td>
+			</tr>
+			<tr>
+				<td><label>PhoneNo :</label></td>
+				<td><input type="text" id="phn" name="phnno" required></td>
+			</tr>
+			<tr>
+				<td><label>Password :</label></td>
+				<td><input type="password" id="pwd" name="Password"></td>
+			</tr>
+			<tr>
+				<td><label>Email :</label></td>
+				<td><input type="mail" id="mail" name="mail"></td>
+			</tr>
+			<tr>
+				<td><label>Branch :</label></td>
+				<td> <input type="checkbox" name="branch" value="Cse">CSE<br>
+				<input type="checkbox" name="vehicle2" value="EEE">EEE<br>
+				<input type="checkbox" name="vehicle3" value="MECH" checked>MECh <br> </td>
+			</tr>
+			<tr>
+				<td><button   type= submit >Register</button></td>
+				<td><button type="reset" onclick="reset()">Reset</button></td>
+			</tr>
+			
+		</table>
+	</div>
+
+</form></center>
+	</body>
+</html>
